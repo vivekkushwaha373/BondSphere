@@ -8,9 +8,10 @@ const {app,server} = require('./socket/socket');
 require('dotenv').config();
 app.use(express.json());
 app.use(cookieParser());
+app.set('trust proxy', 1);
 
 app.use(cors({
-    origin: "*", // Allow only frontend requests from this origin
+    origin: "https://bond-spheree.vercel.app", // Allow only frontend requests from this origin
     credentials: true, // Optional if you're using cookies or authentication headers
 }));
 
