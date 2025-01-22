@@ -98,6 +98,8 @@ exports.login = async (req, res) => {
             
         }
 
+        console.log('token', token);
+
         return res.cookie("token", token, options).status(200).json({
             success: true,
             message: "User is SuccessFully LoggedIn",
