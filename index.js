@@ -11,7 +11,8 @@ app.use(cookieParser());
 app.set('trust proxy', 1);
 
 app.use(cors({
-    origin: "https://bond-spheree.vercel.app", // Allow only frontend requests from this origin
+    origin: "https://bond-spheree.vercel.app", 
+    // origin:"http://localhost:5173",
     credentials: true, // Optional if you're using cookies or authentication headers
 }));
 
