@@ -14,13 +14,8 @@ app.use(cors({
     credentials: true, // Optional if you're using cookies or authentication headers
 }));
 
-app.use(compression());
 
-// Serve static files with caching headers
-const staticOptions = {
-    maxAge: "1y", // Cache for 1 year
-    etag: false,
-};
+
 
 
 require('dotenv').config();
