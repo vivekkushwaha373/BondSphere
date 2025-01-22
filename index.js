@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use(cors({
-    origin: 'http://localhost:5173', // Allow only frontend requests from this origin
+    origin: "*", // Allow only frontend requests from this origin
     credentials: true, // Optional if you're using cookies or authentication headers
 }));
 
